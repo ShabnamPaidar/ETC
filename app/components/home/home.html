@@ -1,0 +1,53 @@
+<!-- Main component for home page -->
+<div class="container">
+
+	
+	
+	<div class="col-md-6 result-content jumbotron-container">
+		<div class="jumbotron">
+			<h1>Explore the Coast</h1>
+			<br>
+			<p>A network of public trails for walkers, bikers, equestrians, wheelchair riders and others along the 1200-mile California coastline.</p>
+			{{firstName}}
+            </div>
+	</div>
+	<div class="col-md-6 result-content">
+		<!--buttons-->
+		<div class="example-box-wrapper">
+			<div class="pad5A box-md">
+				<div class="input-group">
+					<span><input class="form-control" placeholder="City or Zipcode" type="text">
+					</span>
+				</div>
+			</div>
+			<a href="#" class="btn btn-black btn-lg btn-block ">
+				<span class="glyph-icon icon-separator"><i class="glyph-icon icon-facebook"></i>
+				</span>
+				<span class="button-content">
+					<a class="btn btn-lg btn-primary" href="#/view2" role="button">Explore By Coasts</a>
+				</span>
+                    </a>
+			<a href="search_result.html" class="btn btn-black btn-lg btn-block ">
+				<span class="glyph-icon icon-separator">
+					<i class="glyph-icon icon-facebook"></i>
+				</span><span class="button-content">
+				<a class="btn btn-lg btn-primary"  role="button" href="#/view3">Explore By Trails</a>
+				</span>
+			</a>
+			<a href="interest.html" class="btn btn-black btn-lg btn-block ">
+				<span class="glyph-icon icon-separator"><i class="glyph-icon icon-facebook"></i>
+				</span>
+				<span class="button-content">
+					<a class="btn btn-lg btn-primary"  href="#/view4" role="button">Explore By Intrest</a>
+				</span>
+			</a>
+			<a href="#" class="btn btn-black btn-lg btn-block ">
+				<span class="glyph-icon icon-separator"><i class="glyph-icon icon-facebook"></i>
+				</span>
+			</a>
+		</div><!--./example-box-wrapper-->
+     </div><!--./result-content-->
+</div><!--./home-container-->
+
+
+<div ui-view></div>

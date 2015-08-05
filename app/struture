@@ -1,0 +1,67 @@
+app/
+
+
+----- components/	// each component is treated as a mini Angular app
+---------- Core/ 	//any additional components that will be shared across many pages.
+--------------- header/  
+--------------- footer/
+
+---------- home/
+--------------- home.Controller.js
+--------------- home.Service.js
+--------------- home.html
+
+---------- trail/
+--------------- trails.Controller.js
+--------------- trails.Service.js
+--------------- trails.html
+
+
+
+
+---------- etc/
+--------------- etc.Controller.js
+--------------- etc.Service.js
+--------------- etc.html
+--------------- etcList.html
+--------------- etcMap.html
+
+---------- trailDesc/
+---------------- trailDesc.Controller.js
+---------------- trailDesc.Service.js
+---------------- trailDesc.html
+
+
+------------------------- trailmap/
+----------------------------- trailList.html
+----------------------------- trailMap.html
+
+
+----------- accessPoint/
+----------------------------- trailList.html
+----------------------------- trailMap.html
+
+
+---------- byInterest/
+--------------- byInterest.Controller.js
+--------------- byInterest.Service.js
+--------------- byInterest.html
+
+
+
+
+
+----- app.module.js   	//main application module
+----- app.routes.js		// module configuration
+
+assets/
+----- img/      // Images and icons
+----- css/      // All styles and style related files
+----- js/       // JavaScript files that are not for angular
+----- Fonts/		// fonts
+----- libs/		// AngularJS and Third-party libraries such as jQuery, bootstrap, etc.
+
+Templates/		
+index.html		// App layout file (the main html template file of the app)
+index-async.html      // Just like index.html, but loads js files asynchronously
+

@@ -1,0 +1,102 @@
+<script src="scripts/controllers/main.js"></script>
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Explore The Coast</title>
+<head>
+
+<meta name="description" content="">
+<meta name="author" content="Shabnam Paidarfard">
+
+<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+<link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" rel="stylesheet">
+
+<!-- font/icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/css/docs.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.min.js"></script>
+
+
+<script src="assets/libs/ui-bootstrap-tpls-0.13.2.js"></script>
+<script src="assets/libs/angular/smoothscroll-angular-custom.js"></script>
+<script src="assets/libs/angular/angular-ui-router.js"></script>
+
+  <script src="uiBreadcrumbs.js"></script>
+</head>
+<body>
+	<!-- Fixed navbar -->
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs" href="#">Explore the Coast</a>
+            </div>
+            <nav class="hidden-xs">
+                <ul class="nav navbar-nav">
+                    <a href="#" role="button" class="navbar-brand">
+                        Explore the Coast
+					</a>
+				</ul>
+					 <ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Search</a></li>
+                    <li class="dropdown" dropdown>
+                        <a role="button" class="dropdown-toggle" dropdown-toggle>
+                            Menu <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">link 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="visible-xs" collapse="!isCollapsed">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" ng-click="isCollapsed = !isCollapsed">Link 2</a></li>
+                    <li><a href="#" ng-click="isCollapsed = !isCollapsed">Link3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+	<div class="jumbotron "></div>
+<ui-breadcrumbs displayname-property="data.displayName"></ui-breadcrumbs>
+
+<div ui-view="main"></div>
+</div><!-----./container--->
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+<!--<script src="lib/angular/angular.js"></script>-->
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="app.module.js"></script>
+<script src="app.routes.js"></script>
+<script src="js/services.js"></script>
+<script src="js/bootstrap-controller.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+
+</body>
+</html>
